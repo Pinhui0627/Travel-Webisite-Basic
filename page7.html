@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+  <style>
+    .tab-content{font-family: 'Noto Sans TC', sans-serif;}
+    #MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+	h1{font-family: 'Noto Serif TC', serif;}
+	a:link     {color:#FF3333}
+	a:visited  {color:#227700}
+	a:hover    {color:#800000}
+  </style>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+	    <div class="navbar-header">
+		  <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="page1.html" style="color:#191970">美國</a></li>
+				<li><a href="page2.html" style="color:#191970">法國</a></li>
+				<li><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			<li><a href="page9.html" style="color:white">國內景點</a></li>
+			<li><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li class="active"><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			  <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+  </nav>
+  <br></br>
+  <br></br>
+  <article>
+    <div id="MyBlog4">
+	  <span id="title"><a href="#back"> Back to top</a></span>
+	</div>
+	<div class="container" id="back">
+	  <font color="#003377"><b><h1>網站架構</h1></b></font>
+	  <hr>
+	  <ul class="nav nav-pills nav-justified">
+        <li class="active"><a href="#tab1" data-toggle="tab"><h5>網站架構及設計理念</h5></a></li>
+		<li><a href="#tab2" data-toggle="tab"><h5>內容說明</h5></a></li>
+		<li><a href="#tab3" data-toggle="tab"><h5>各個頁面</h5></a></li>
+      </ul>
+	  <div class="tab-content">    
+        <div class="tab-pane fade in active" id="tab1">
+		  <div class="container">
+		  <br></br>
+		  <h3>網站架構</h3>
+		  <hr>
+		  <img src="image\stru1.jpg"  width="50%" style="float:right">
+		  <font color="#008844" size="4">
+		    <p>本網站語法:html,css,bootstrap,JavaScript</p>
+		  </font>
+		  <font color="#CD5C5C" size="4">
+		  <p>包含了:</p>
+		    <ol type="1"> 
+			    <li>版面設計</li>
+		        <li>圖片效果</li>
+		        <li>文字變化</li>
+				<li>位置編排</li>
+				<li>網格系統</li>
+				<li>文字/圖片 超連結</li>
+			</ol>
+		  <p>版面設計含:</p>
+		    <ol type="a">
+				<li>導覽列</li>
+				<li>內文</li>
+				<li>頁尾</li>
+				<li>側邊攔</li>
+			</ol>
+		  </font>
+		  <h3 style="clear:right">設計理念</h3>
+		  <hr>
+		  <img src="image\T.png" width="30%"  style="float:left; margin:0px 40px">
+		  <font color="#CD5C5C" size="4">
+		  <p>會想做這樣一個網頁是因為喜歡的網站的主題是跟旅遊有關的</p>
+		  <p>自己本身也很喜歡旅遊，所以想做旅遊網站來介紹給大家</p>
+		  <p>其中有幾個國內景點也是自己有去過的，所以做起來更有感覺</p>
+		  <p>還有參考一些旅遊網站，看他們是如何設計，如何擺置內容</p>
+		  <p>雖然做的沒有辦法像他們一樣專業，但也是自己用心去製作的</p>
+		  <p>除了課本上老師教的內容外，也有去找一些特別設計的css語法</p>
+		  <p>來加入到我的網頁中，使網頁更加多元。</p>
+		  </font>
+		  <p style="clear:left"></p>
+		</div>
+		</div>
+	    <div class="tab-pane fade" id="tab2">
+		    <br></br>
+		    <img src="image\traveler.jpg" width="600" style="float:right">
+			<font color="#008844" size="4">
+			<p>本網站的類型為旅遊網站</p>
+			<p>對象沒有特別限定</p>
+			<p>介紹內容是國外旅遊的部分</p>
+			<p>內容主要分為首頁及各個國家以及國內景點</p>
+			</font>
+			<ul>
+			<font color="#8B4513" size="4"><li><b>首頁</b></li></font>
+			<ol type="1">
+			<font color="#CD5C5C" size="4">
+			  <li>較豐富且多樣 </li>
+			  <li>廣告內容</li>
+			  <li>購票連結</li>
+			  <li>資訊連結</li>
+			</font>
+			</ol>
+			<font color="#8B4513" size="4"><li><b>國內景點</b></li></font>
+			<ol type="1">
+			  <font color="#CD5C5C" size="4">
+			    <li>共有3個縣市</li>
+		        <li>每個縣市都有2個景點</li>
+		        <li>皆有簡介及圖片</li>
+				<li>資訊連結</li>
+		      </font>
+			</ol>
+			  <font color="#8B4513" size="4"><li><b>國家</b></li></font>
+			<ol type="1">
+			  <font color="#CD5C5C" size="4">
+				<li>各國各有4個景點</li>
+				<li>每個景點都有簡介及圖片</li>
+				<li>每個國家都有嵌入一段YouTube上的vlog</li>
+				<li>資訊連結</li>
+		      </font>
+			</ol>
+			</ul>
+			<p style="clear:right"> </p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<table class="table table-hover">
+			<thead>
+			<tr class="info">
+		      <font color="#4B0082" size="4">
+	            <th>國家/景點</th>
+		        <th>美國</th>
+			    <th>法國</th>
+				<th>新加坡</th>
+				<th>日本</th>
+				<th>澳洲</th>
+			  </font>
+			</tr>
+			</thead>	
+	    <tbody>
+		  <tr>
+		    <font color="#4B0082" size="4"><td>1</td></font>
+			<font color="#8B008B" size="4">
+		    <td>大峽谷</td>
+			<td>艾菲爾鐵塔</td>
+			<td>魚尾獅公園</td>
+			<td>富士山</td>
+			<td>大堡礁</td>
+			</font>
+		  </tr>
+		  <tr>
+		    <font color="#4B0082" size="4"><td>2</td></font>
+			<font color="#8B008B" size="4">
+			<td>自由女神像</td>
+			<td>羅浮宮</td>
+			<td>新加坡環球影城</td>
+			<td>清水寺</td>
+			<td>雪梨歌劇院</td>
+			</font>
+		  </tr>
+		  <tr>
+		    <font color="#4B0082" size="4"><td>3</td></font>
+			<font color="#8B008B" size="4">
+			<td>時代廣場</td>
+			<td>香榭麗舍大街</td>
+			<td>濱海灣花園</td>
+			<td>大阪城</td>
+			<td>雪梨港灣大橋</td>
+			</font>
+		  </tr>
+		  <tr>
+		    <font color="#4B0082" size="4"><td>4</td></font>
+			<font color="#8B008B" size="4">
+			<td>尼加拉瀑布</td>
+			<td>蔚藍海岸</td>
+			<td>夜間野生動物園</td>
+			<td>大通公園</td>
+			<td>烏盧魯</td>
+			</font>
+		  </tr>
+		</tbody>
+	    </table>
+		</div>
+		<div class="tab-pane fade" id="tab3">
+		  <h3 style="background:#FFFF77">首頁</h3>
+		  <font color="#8B008B" size="4">
+		  <p>進到了網頁受先會有一個java script 顯示"Welcome to TraVeler!"</p>
+		  <p>接著就到了我的首頁主體:</p>
+		  <ul>
+		    <li>頂端是以nav導覽列來連接我的各個頁面</li>
+			<li>內容的部分有thumbnail</li>
+			<li>panel樣式的側邊攔</li>
+			<li>button樣式的廣告</li>
+		  </ul>
+		  </font>
+		  <div id="myCarousel1" class="carousel slide">
+            <ol class="carousel-indicators">
+			  <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel1" data-slide-to="1"></li>
+			  <li data-target="#myCarousel1" data-slide-to="2"></li>
+			  <li data-target="#myCarousel1" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="item active">
+  		      <a href="#Grand"><img src="image\index1.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\index2.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\index3.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\index4.png" width="100%"></a>
+			</div>
+			</div>
+		    <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel1" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+		  <hr>
+		  <h3 style="background:#FFFF77">各個國家</h3>
+		  <font color="#8B008B" size="4">
+		  <p>各個國家的內容主體相同:</p>
+		  <ul>
+		    <li>一樣是導覽列為最頂端</li>
+		    <li>使用Carousel製作圖片輪播效果</li>
+			<li>用panel來介紹各個國家</li>
+			<li>嵌入youtube影片</li>
+			<li>以分頁導覽選取頁面</li>
+		  </ul>
+		  </font>
+		  <div id="myCarousel2" class="carousel slide">
+            <ol class="carousel-indicators">
+			  <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel2" data-slide-to="1"></li>
+			  <li data-target="#myCarousel2" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="item active">
+  		      <a href="#Grand"><img src="image\page1-1.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\page1-2.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\page1-3.png" width="100%"></a>
+			</div>
+			</div>
+		    <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel2" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+		  <hr>
+		  <h3 style="background:#FFFF77">國內景點</h3>
+		  <font color="#8B008B" size="4">
+		  <p>內容主體:</p>
+		  <ul>
+		    <li>最上面是以一張圖做為簡單的內文標題</li>
+		    <li>內文的部分以tab標籤頁作為各個地點的介紹</li>
+			<li>介紹的部分有照片還有連到外部網站的介紹</li>
+		  </ul>
+		  </font>
+		  <div id="myCarousel3" class="carousel slide">
+            <ol class="carousel-indicators">
+			  <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel3" data-slide-to="1"></li>
+			  <li data-target="#myCarousel3" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="item active">
+  		      <a href="#Grand"><img src="image\page9-1.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\page9-2.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\page9-3.png" width="100%"></a>
+			</div>
+			</div>
+		    <a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel3" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+		  <hr>
+		  <h3 style="background:#FFFF77">會員註冊</h3>
+		  <font color="#8B008B" size="4">
+		  <p>註冊頁面是以form表單作為主體</p>
+		  <p>有許多相關問題</p>
+		  <p>在送出表單後會有javascript彈出視窗 顯示"註冊完成!"</p>
+		  </font>
+		  <div id="myCarousel4" class="carousel slide">
+            <ol class="carousel-indicators">
+			  <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel4" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="item active">
+  		      <a href="#Grand"><img src="image\page8-1.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\page8-2.png" width="100%"></a>
+			</div>
+			</div>
+		    <a class="carousel-control left" href="#myCarousel4" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel4" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+		</div>
+	  </div>
+	  
+	</div>
+  </article>
+  <footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>

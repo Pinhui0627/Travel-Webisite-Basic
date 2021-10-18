@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+   <style>
+    #MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+	.tab-content{font-family: 'Noto Sans TC', sans-serif;}
+    h1{font-family: 'Noto Serif TC', serif;}
+	a:link     {color:#FF3333}
+	a:visited  {color:#227700}
+	a:hover    {color:#800000}
+  </style>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+	    <div class="navbar-header">
+		  <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="page1.html" style="color:#191970">美國</a></li>
+				<li><a href="page2.html" style="color:#191970">法國</a></li>
+				<li><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			<li><a href="page9.html" style="color:white">國內景點</a></li>
+			<li class="active"><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			  <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+  </nav>
+  <br></br>
+  <br></br>
+  <article>
+    <div id="MyBlog4">
+	  <span id="title"><a href="#back"> Back to top</a></span>
+	</div>
+	<div class="container" id="back">
+	  <center>
+	    <font color="#003377"><b><h1>推薦網站</h1></b></font>
+		<hr>
+		<h3><a href="https://www.designhotels.com/">Design Hotels™</a></h3>
+        <iframe src="https://www.designhotels.com/" width="1100" height="500" frameborder="0" margin=""></iframe>
+	    
+	  </center>
+	  <hr>
+	  <ul class="nav nav-pills nav-justified">
+		<li class="active"><a href="#tab1" data-toggle="tab"><h5>為何推薦及優缺點</h5></a></li>
+        <li><a href="#tab2" data-toggle="tab"><h5>各個頁面架構</h5></a></li>
+      </ul>
+	  <div class="tab-content">    
+		<div class="tab-pane fade in active" id="tab1">
+		  <div class="container" style="margin:30px">
+		  <font color="#8B008B" size="4">
+		  <p>我喜歡這個網頁的主要原因是它的簡約版面，色調一致，讓看網頁的我們是感到非常舒服的。</p>
+		  <p>且所有連結都標示的很清楚，所以每個資訊都很清楚的顯示在網頁上。</p>
+		  <p>雖然這個網站的主題是訂房網站，但是此網頁是非常多樣的</p>
+		  <p>除了訂房還有介紹許多東西，像是他們的創作背景、文化、商店、畫廊等等</p>
+		  <p>很多在其他訂房網站不曾看過的東西，真的很特別很有創意</p>
+		  <p>進到他們的網站知道的不只是度假的消息，還能了解到那麼多東西，真的非常值得一看。</p>
+		  </font>
+		  <img src="image\hotel.png" style="float:right; margin:60px 220px 50px 50px">
+		  <font color="#008844" size="4">
+		  <p>優點:</p>
+		  </font>
+		    <ol type="1">
+			  <font color="#CD5C5C" size="4">
+			    <li>圖文並茂</li>
+		        <li>版面配色簡約 不會令人眼花撩亂</li>
+		        <li>資訊清楚</li>
+				<li>風格多樣</li>
+		      </font>
+			</ol>
+		  <font color="#008844" size="4">
+		  <p>缺點:</p>
+		  </font>
+		    <ol type="1">
+			  <font color="#CD5C5C" size="4">
+			    <li>因為較複雜，東西多，有時找資料不好找</li>
+		        <li>語言可以多元化，方便其他國家的人觀看</li>
+		      </font>
+			</ol>
+			<p style="clear:right"></p>
+		  </div>
+		</div>
+		<div class="tab-pane fade" id="tab2">
+		  <b><h3 style="background:#FFFF77">首頁</h3></b>
+		  <font color="#8B008B" size="4">
+		    <p>首頁整體看起來很整齊，以黑白灰三色為主，很有一致性</p>
+			<p>頁面上方會有一個查找酒店的浮動視窗，能夠讓觀看者快速訂房</p>
+			<p>連接到各個頁面的超連結，由按鈕及圖片控制</p>
+			<p>在中間穿插的圖片面板有超連結的簡介</p>
+			<p>在頁尾的部分有所有頁面的超連結</p>
+			<p></p>
+		  </font>
+		  <div id="myCarousel1" class="carousel slide">
+            <ol class="carousel-indicators">
+			  <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel1" data-slide-to="1"></li>
+			  <li data-target="#myCarousel1" data-slide-to="2"></li>
+			  <li data-target="#myCarousel1" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="item active">
+  		      <a href="#Grand"><img src="image\like1.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like1-2.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like1-3.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like1-4.png" width="100%"></a>
+			</div>
+			</div>
+		    <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel1" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+		  <hr>
+		  <h3 style="background:#FFFF77">內頁</h3>
+		  <font color="#8B008B" size="4">
+		    <p>內頁樣式有非常多種</p>
+			<p>版面配置都不同</p>
+			<p>其中一種我最喜歡的樣式是介紹hotels的網頁</p>
+		  </font>
+		  <center><img src="image\like.png" width="100%"></center>
+		  <font color="#8B008B" size="4">
+			<p>最上面是以圖片作為頁首</p>
+			<p>內文的部分就是介紹各間旅店</p>
+			<p>旁邊有價格範圍可選擇</p>
+			<p>在我之前看到的大部分網站都是選擇好之後要再按確認</p>
+			<p>但此網站是用拉桿式的選擇，選擇好會自動將範圍外的隱藏掉，較方便且快速</p>
+			<p>側邊欄的部分就是分類設置</p>
+			<p>在內文上端還有排序方式的選擇，也是大部分的訂房網站都會有的設置</p>
+			<p>雖然是簡約的版面配置，但是該有的分類都有</p>
+			<p>所以讓使用者能夠快速地找到想要的資料</p>
+		  </font>
+			<br>
+			<div id="myCarousel2" class="carousel slide">
+            <ol class="carousel-indicators">
+			  <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel2" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="item active">
+  		      <a href="#Grand"><img src="image\like2-1.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-2.png" width="100%"></a>
+			</div>
+			</div>
+		    <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel2" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+			<hr>
+			<b><h3 style="background:#FFFF77">其他內頁</h3></b>
+		  <div id="myCarousel3" class="carousel slide">
+            <ol class="carousel-indicators">
+			  <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel3" data-slide-to="1"></li>
+			  <li data-target="#myCarousel3" data-slide-to="2"></li>
+			  <li data-target="#myCarousel3" data-slide-to="3"></li>
+			  <li data-target="#myCarousel3" data-slide-to="4"></li>
+			  <li data-target="#myCarousel3" data-slide-to="5"></li>
+			  <li data-target="#myCarousel3" data-slide-to="6"></li>
+			  <li data-target="#myCarousel3" data-slide-to="7"></li>
+			  <li data-target="#myCarousel3" data-slide-to="8"></li>
+			  <li data-target="#myCarousel3" data-slide-to="9"></li>
+			  <li data-target="#myCarousel3" data-slide-to="10"></li>
+			</ol>
+			<div class="carousel-inner">
+			<div class="item active">
+  		      <a href="#Grand"><img src="image\like2-3.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-4.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-5.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-6.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-7.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-8.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-9.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-10.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-11.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-12.png" width="100%"></a>
+			</div>
+			<div class="item">
+  		      <a href="#Grand"><img src="image\like2-13.png" width="100%"></a>
+			</div>
+			</div>
+		    <a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel3" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+		</div>
+	  </div>
+  </article>
+  <footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>

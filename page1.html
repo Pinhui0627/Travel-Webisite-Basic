@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+  <style>
+    #MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+	h2{font-family: 'Ubuntu', sans-serif;}
+	h1{font-family: 'Noto Serif TC', serif;}
+	h3{font-family: 'Noto Sans TC', sans-serif;}
+	a:link     {color:#800000}
+	a:visited  {color:#FF3333}
+	a:hover    {color:#A500CC}
+  </style>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+	    <div class="navbar-header">
+		  <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li  class="active"><a href="page1.html" style="color:#191970">美國</a></li>
+				<li><a href="page2.html" style="color:#191970">法國</a></li>
+				<li><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			<li><a href="page9.html" style="color:white">國內景點</a></li>
+			<li><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			 <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>	
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+    </nav>
+	<br></br>
+    <br></br>
+	<article>
+	<div id="MyBlog4">
+	  <span id="title"><a href="#back"> Back to top</a></span>
+	</div>
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" id="back">
+		<div class="item active">
+  		  <a href="#Grand"><img src="image\ku2.jpg" width="100%"></a>
+          <div class="carousel-caption">
+            <h1>大峽谷國家公園</h1>
+          </div>  
+        </div>
+		<div class="item">
+          <a href="#Statue"><img src="image\zz1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>自由女神像</h1>
+          </div>
+        </div>
+		<div class="item">
+          <a href="#Times"><img src="image\di1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>時代廣場</h1>
+          </div>
+        </div>
+		<div class="item">
+  		  <a href="#Niagara"><img src="image\pu2.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>尼加拉瀑布</h1>
+          </div>          
+        </div>
+      </div>
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+	<br></br>
+	<br></br>
+	
+	<center><h2><b><font color="#00008B">Introduction of attactions</font></b></h2></center>
+	<p style="margin:0cm 7cm">
+	<div class="container">
+	<div class="panel-group" id="accordion">
+      <div class="panel panel-success">
+        <div class="panel-heading" id="Grand"><a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><center>大峽谷國家公園</center></a></div>
+        <div id="collapse1" class="panel-collapse collapse in">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"> <font color="#8B0000"><b><h3>大峽谷國家公園（Grand Canyon National Park）</h3></b></font></p>
+			  <font color="#8B1C62">
+			  <p>是美國西南部的國家公園，在1979年被列為世界自然遺產，</p>
+			  <p>以深達1500公尺，由科羅拉多河耗費萬年所切割出來的科羅拉多大峽谷景觀聞名於世。</p>
+			  <p>位於美國亞利桑那州的西北角。整個大峽谷走向為東西向，總長有454公里，寬度從最</p>
+			  <p>窄的6公里到25公里。將大峽谷分為南緣跟北緣。整個國家公園總面積為1,217,403畝。</p>
+			  <p>在地形上是高原地形，該地的高原稱為凱巴布高原（Kaibab）。</p>
+			  </font>
+			</div>
+			<div class="col-md-5">
+			  <img src="image\ku1.jfif" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>	  
+	  <div class="panel panel-info">
+        <div class="panel-heading" id="Statue"><a href="#collapse2" data-toggle="collapse" data-parent="#accordion"><center>自由女神像</center></a></div>
+        <div id="collapse2" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>自由女神像（英語：Statue of Liberty）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是一座位於美國紐約紐約港自由島上的巨型古典主義塑像。由弗里德利·奧古斯特·巴特勒迪設計，</p>
+			  <p>由居斯塔夫·艾菲爾建造，於1886年10月28日落成，是法國共濟會送給美國分部的禮物，在自由女神</p>
+			  <p>的基座上刻有共濟會的標誌。塑像人物是一位身穿長袍的女性，代表羅馬神話中的自主神，她右手</p>
+			  <p>高舉火炬，左手的冊子上用羅馬數字寫有美國獨立宣言的簽署日期：「JULY IV MDCCLXXVI」</p>
+			  <p>（1776年7月4日），腳下還有斷裂的鎖鏈。這座塑像是自由和美國的象徵，對外來移民展現出歡迎信號。</p>
+			  </font>
+		    </div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\zz2.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-warning">
+        <div class="panel-heading" id="Times"><center><a href="#collapse3" data-toggle="collapse" data-parent="#accordion">時代廣場</a></center></div>
+        <div id="collapse3" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"><b><font color="#8B0000"><h3>時代廣場（英語：Times Square）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是美國紐約曼哈頓的一個商業中心，位於百老匯大道與第七大道會合處，範圍由西42街延伸至西47街。</p>
+			  <p>時代廣場的名稱源自《紐約時報》（New York Times，又譯為「紐約時代報」）早期在此設立的總部大樓</p>
+			  <p>，因此中文譯名有時會根據報社而譯為「時報廣場」，或根據英文原名「Times」直譯為「時代廣場」。</p>
+			  <p>百老匯上的劇院、大量耀眼的霓虹光管廣告、以及電視式的宣傳版，已經深入成為象徵紐約的標誌，</p>
+			  <p>反映曼哈頓強烈的都市特性。時報廣場是市內唯一在規劃法令內，要求業主「必須」懸掛亮眼宣傳版的</p>
+			  <p>地區。時報廣場宣傳版的密度，與拉斯維加斯可相比擬。</p>
+			  </font>
+		    </div>
+			<div class="col-md-5">
+			  <img src="image\di2.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-danger">
+        <div class="panel-heading" id="Niagara"><center><a href="#collapse4" data-toggle="collapse" data-parent="#accordion">尼加拉瀑布</a></center></div>
+        <div id="collapse4" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>尼加拉瀑布（英語：Niagara Falls）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是由三座位於北美洲五大湖區尼加拉河上瀑布的總稱，平均流量為2,407立方公尺/秒，與伊瓜蘇</p>
+			  <p>瀑布、維多利亞瀑布並稱為世界三大跨國瀑布。尼加拉瀑布以美麗的景色，巨大的水力發電能力</p>
+			  <p>和極具挑戰性的環境保護工程而聞名於世，是非常受遊客歡迎的旅遊景點。 整個瀑布跨越加拿大的</p>
+			  <p>安大略省和美國的紐約州構成南部的尼亞加拉峽谷。三座瀑布按規模從大到小分別為馬蹄瀑布，</p>
+			  <p>美國瀑布，布里達爾維爾瀑布。其中，馬蹄瀑布位於美國和加拿大的邊境，美國瀑布全部位於美國境內</p>
+			  <p>並由山羊島分隔開。小些的布里達爾維爾瀑布也在美國境內，由月神島從美國瀑布隔開。</p>
+			  </font>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\pu1.jfif" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	</div>
+	</div>
+	</p>
+	<br></br>
+	<br></br>
+	<center>
+      <iframe width="700" height="394" src="https://www.youtube.com/embed/n2vRiV0lObQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+	  <ul class="pagination">
+        <li><a href="#" aria-label="Previous"><span>&laquo;</span></a></li>
+        <li class="active"><a href="page1.html">1</a></li>
+        <li><a href="page2.html">2</a></li>
+        <li><a href="page3.html">3</a></li>
+        <li><a href="page4.html">4</a></li>
+        <li><a href="page5.html">5</a></li>
+        <li><a href="page2.html" aria-label="Next"><span>&raquo;</span></a></li>
+      </ul>
+	</center>
+  </article>
+  <footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>

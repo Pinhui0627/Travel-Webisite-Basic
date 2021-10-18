@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+  <style>
+    .alert1
+	{
+	  border:2px #FF8800 solid;
+      background-color:#FF8800;
+      color:#fff;
+      border-radius:10px;
+      cursor:pointer;
+	}
+	.alert1:hover
+	{
+	  background-color:#EE7700;
+      color:#fff;
+      border:2px #EE7700 solid;
+	}
+	.alert2
+	{
+	  border:2px #C10066 solid;
+      background-color:#C10066;
+      color:#fff;
+      border-radius:10px;
+      cursor:pointer;
+	}
+	.alert2:hover
+	{
+	  background-color:#A20055;
+      color:#fff;
+      background-color:#A20055;
+      border:2px #A20055 solid;
+	}
+	.alert3
+	{
+	  border:2px #008844 solid;
+      background-color:	#008844;
+      color:#fff;
+      border-radius:10px;
+      cursor:pointer;
+	}
+	.alert3:hover
+	{
+	  background-color:#008800;
+      color:#fff;
+      background-color:#008800;
+      border:2px #008800 solid;
+	}
+	
+    .close
+	{
+	    background-color: #4CAF50; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+	#myModalbuy{
+	  border:2px #7A0099 solid;
+      background-color:#fff;
+      color:#7A0099;
+      border-radius:0px;
+      cursor:pointer;
+	}
+	#myModalbuy:hover
+	{
+	  background-color:#7A0099;
+      color:#fff;
+      background-color:#7A0099;
+      border:2px #7A0099 solid;
+	}
+	#myModal{
+	  border:2px #003C9D solid;
+      background-color:#fff;
+      color:#003C9D;
+      border-radius:0px;
+      cursor:pointer;
+	}
+	#myModal:hover
+	{
+	  background-color:#003C9D;
+      color:#fff;
+      background-color:#003C9D;
+      border:2px #003C9D solid;
+	}
+    #MyBlog1
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -160px; 
+    background: #FFCCCC;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: -50px;
+	}
+	#MyBlog1:hover{right:-10px;}
+	#MyBlog1 #title{padding-right: 5px; }
+	
+	#MyBlog2
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -130px; 
+    background: #FFEE99;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 0px;
+	}
+	#MyBlog2:hover{right:-10px;}
+	#MyBlog2 #title{padding-right: 5px; }
+	
+	#MyBlog3
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -140px; 
+    background: #CCFF99;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 50px;
+	}
+	#MyBlog3:hover{right:-10px;}
+	#MyBlog3 #title{padding-right: 5px; }
+	
+	#MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+    
+	h3{font-family: 'Noto Serif TC', serif;}
+	a:link     {color:#FF3333}
+	a:visited  {color:#227700}
+	a:hover    {color:#800000}
+  </style>
+  <body>
+   <script>
+      alert("Welcome to TraVeler!");
+    </script>
+	
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+		<div class="navbar-header">
+		    <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li class="active"><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="page1.html" style="color:#191970">美國</a></li>
+				<li><a href="page2.html" style="color:#191970">法國</a></li>
+				<li><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			</li>
+			<li><a href="page9.html" style="color:white">國內景點</a></li>
+			<li><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			  <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+  </nav>
+  <br></br>
+  <br></br>
+  <article>
+	<div id="MyBlog1">
+	  <font color="#FF8888"><span id="title">年終大優惠!</span>馬上報名可享7折優惠!</font>
+	</div>
+	<div id="MyBlog2">
+	  <font color="#FFCC22"><span id="title">開心自由行~ </span>國內旅遊8折起!!</font>
+	</div>
+	<div id="MyBlog3">
+	  <font color="#00DD00"><span id="title">前往夢想世界~</span>五人同行一人半價!</font>
+	</div>
+	<div id="MyBlog4">
+	  <font color="#FFF5EE"><span id="title"><a href="#back"> Back to top</a></span></font>
+	</div>
+    <center><img src="image\traveler.jpg" width="95%" id="back"></center>
+	<br></br>
+	<hr>
+	<br></br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="image\ques.jpg">
+            <div class="caption">
+              <h3><b><font color="#191970">還在想甚麼時候有空?</font></b></h3>
+			  <p><font color="#551A8B">不用想了!跟著TraVeler走就對了!</font></p>
+            </div>
+		  </div>
+		</div>  
+		<div class="col-md-4">
+		  <div class="thumbnail">
+			<img src="image\money.jpg">
+            <div class="caption">
+              <h3><b><font color="#191970">旅遊費用會不會太高?</font></b></h3>
+			  <p><font color="#551A8B">不用擔心!TraVeler會給您最優惠的價格!</font></p>
+            </div>
+		  </div>	
+		</div>
+        <div class="col-md-4">
+          <div class="thumbnail"> 		
+			<img src="image\food.jpg">
+            <div class="caption">
+              <h3><b><font color="#191970">會不會吃不習慣當地食物?</font></b></h3>
+			  <p><font color="#551A8B">TraVeler保證給您好吃又好玩的行程!</font></p>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	<br></br>
+	<hr>
+	<br></br>
+    <div class="row">
+	<div class="col-sm-8">
+	<div class="container" style="margin:5px 20px 15px 50px">
+	  <div class="alert alert1 alert-dismissible col-sm-8" role="alert">
+	    <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+	    <strong>年終大優惠!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong>馬上報名可享7折優惠!
+	  </div>
+	  <div class="alert alert2 alert-dismissible col-sm-8" role="alert">
+	    <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+	    <strong>開心自由行~ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </strong>國內旅遊8折起!
+	  </div>
+	  <div class="alert alert3 alert-dismissible col-sm-8" role="alert">
+	    <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+	    <strong>前往夢想世界~&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong>五人同行一人半價!
+	  </div>
+	</div>
+	
+	
+	<div class="row text-center" style="margin:5px 20px 15px 50px">
+      <div class="col-md-4">
+		<img class="img-circle" src="image\america.jpg" width="170" height="170">
+		<h3><b><font color="#B22222">印象美國</font></b></h3>
+		<p></p>
+		<p><input id="myModal" type="button" value="立即購票&raquo; " name="按鈕名稱" style="width:120px;height:40px;" data-toggle="modal" data-target="#myModal1"></p>
+	  </div>
+	  <div class="modal fade" id="myModal1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h3 class="modal-title"><font color="#5D478B"><b>印象美國 12days</b></font></h3>
+            </div>
+			
+            <div class="modal-body">
+              <img src="image\ame1.png" width="50%" class="img-responsive center-block">
+			  <p class="h3 text-right">全套優惠價$90900</p>
+            </div>
+			
+            <div class="modal-footer">
+              <button id="myModalbuy" type="button" class="btn-lg" onclick="javascript:alert('完成購票!')" >確認購買</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <div class="col-md-4">
+		<img class="img-circle" src="image\france.jpg" width="170" height="170">
+		<h3><b><font color="#B22222">浪漫法國</font></b></h3>
+		<p></p>
+		<p><input id="myModal" type="button" value="立即購票&raquo; " name="按鈕名稱" style="width:120px;height:40px;" data-toggle="modal" data-target="#myModal2"></p>
+	  </div>
+	  <div class="modal fade" id="myModal2" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h3 class="modal-title"><font color="#5D478B"><b>浪漫法國 10days</b></font></h3>
+            </div>
+			
+            <div class="modal-body">
+              <img src="image\fra1.jpg" width="50%" class="img-responsive center-block">
+			  <p class="h3 text-right">全套優惠價$88800</p>
+            </div>
+			
+            <div class="modal-footer">
+              <button id="myModalbuy" type="button" class="btn-lg" onclick="javascript:alert('完成購票!')">確認購買</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <div class="col-md-4">
+		<img class="img-circle" src="image\singapore.jpg" width="170" height="170">
+		<h3><b><font color="#B22222">樂遊新加坡</font></b></h3>
+		<p></p>
+		<p><input id="myModal" type="button" value="立即購票&raquo; " name="按鈕名稱" style="width:120px;height:40px;" data-toggle="modal" data-target="#myModal3"></p>
+	  </div>
+	  <div class="modal fade" id="myModal3" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h3 class="modal-title"><font color="#5D478B"><b>樂遊新加坡 8days</b></font></h3>
+            </div>
+			
+            <div class="modal-body">
+              <img src="image\singa1.jpeg" width="50%" class="img-responsive center-block">
+			  <p class="h3 text-right">全套優惠價$39990</p>
+            </div>
+			
+            <div class="modal-footer">
+              <button id="myModalbuy" type="button" class="btn-lg"onclick="javascript:alert('完成購票!')">確認購買</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <div class="col-md-4">
+		<img class="img-circle" src="image\japan.jpg" width="170" height="170">
+		<h3><b><font color="#B22222">戀戀日本</font></b></h3>
+		<p></p>
+		<p><input id="myModal" type="button" value="立即購票&raquo; " name="按鈕名稱" style="width:120px;height:40px;" data-toggle="modal" data-target="#myModal4"></p>
+	  </div>
+	  <div class="modal fade" id="myModal4" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h3 class="modal-title"><b><font color="#5D478B">戀戀日本 7days</font></b></h3>
+            </div>
+			
+            <div class="modal-body">
+              <img src="image\jap1.jpg" width="50%" class="img-responsive center-block">
+			  <p class="h3 text-right">全套優惠價$24500</p>
+            </div>
+			
+            <div class="modal-footer">
+              <button id="myModalbuy" type="button" class="btn-lg" onclick="javascript:alert('完成購票!')">確認購買</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <div class="col-md-4">
+		<img class="img-circle" src="image\australlia.jpg" width="170" height="170">
+		<h3><b><font color="#B22222">暢遊澳洲</font></b></h3>
+		<p></p>
+		<p><input id="myModal" type="button" value="立即購票&raquo; " name="按鈕名稱" style="width:120px;height:40px;" data-toggle="modal" data-target="#myModal5"></p>
+	  </div>
+	  <div class="modal fade" id="myModal5" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h3 class="modal-title"><b><font color="#5D478B">暢遊澳洲 9days</font></b></h3>
+            </div>
+			
+            <div class="modal-body">
+              <img src="image\aus1.jpg" width="50%" class="img-responsive center-block">
+			  <p class="h3 text-right">全套優惠價$57900</p>
+            </div>
+			
+            <div class="modal-footer">
+              <button id="myModalbuy" type="button" class="btn-lg" onclick="javascript:alert('完成購票!')">確認購買</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <div class="col-md-4">
+		<img class="img-circle" src="image\mystery.jpg" width="170" height="170">
+		<h3><b><font color="#B22222">秘境探訪</font></b></h3>
+		<p></p>
+		<p><input id="myModal" type="button" value="立即購票&raquo; " name="按鈕名稱" style="width:120px;height:40px;" data-toggle="modal" data-target="#myModal6"></p>
+	  </div>
+	  <div class="modal fade" id="myModal6" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h3 class="modal-title"><b><font color="#5D478B">秘境探訪 4days</font></b></h3>
+            </div>
+			
+            <div class="modal-body">
+              <img src="image\mys1.png" width="50%" class="img-responsive center-block">
+			  <p class="h3 text-right">全套優惠價$17900</p>
+            </div>
+			
+            <div class="modal-footer">
+              <button id="myModalbuy" type="button" class="btn-lg" onclick="javascript:alert('完成購票!')">確認購買</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	</div>
+	<aside>
+    <div class="col-sm-3 col-sm-offset-1" style="margin:5px 60px 15px 40px">
+	  <div class="panel panel-primary">
+	    <div class="panel-heading">
+		  <h4><b>熱門地點</b></h4>
+		</div>
+		<div class="panel-body">
+		<ul style="list-style:square">
+		    <li><a href="page1.html">美國</a></li>
+			  <ol style="list-style:decimal">
+			    <li>大峽谷</li>
+				<li>自由女神像</li>
+				<li>時代廣場</li>
+				<li>尼加拉瀑布</li>
+			  </ol>
+			<li><a href="page2.html">法國</a></li>
+			  <ol style="list-style:decimal">
+			    <li>艾菲爾鐵塔</li>
+				<li>羅浮宮</li>
+				<li>香榭麗舍大街</li>
+				<li>蔚藍海岸</li>
+			  </ol>
+			<li><a href="page3.html">新加坡</a></li>
+			  <ol style="list-style:decimal">
+			    <li>魚尾獅公園</li>
+				<li>新加坡環球影城</li>
+				<li>濱海灣花園</li>
+				<li>夜間野生動物園</li>
+			  </ol>
+			<li><a href="page4.html">日本</a></li>
+			  <ol style="list-style:decimal">
+			    <li>富士山</li>
+				<li>清水寺</li>
+				<li>大阪城</li>
+				<li>大通公園</li>
+			  </ol>
+			<li><a href="page5.html">澳洲</a></li>
+			  <ol style="list-style:decimal">
+			    <li>大堡礁</li>
+				<li>雪梨歌劇院</li>
+				<li>雪梨港灣大橋</li>
+				<li>烏盧魯</li>
+			  </ol>
+		</ul>
+		</div>
+	  </div>
+	  <div class="panel panel-primary">
+	    <div class="panel-heading">
+		  <h4><b>旅遊資訊</b></h4>
+		</div>
+		<div class="panel-body">
+		  <p>參考網站:</p>
+		  <p><a href="http://www.lifetour.com.tw/eWeb_lifetour/newpage/index.html?gclid=CjwKCAiA__HvBRACEiwAbViuUwPgFqPo4-BTgp-myFkdvQh1oUNxCk2Df9ozzyJ4wHDwkMAVohlG1hoCpZMQAvD_BwE&gclsrc=aw.ds">五福旅遊</a></p>
+		  <p><a href="https://www.liontravel.com/category/zh-tw/index">雄獅旅遊</a></p>
+		  <p><a href="http://www.bwt.com.tw/eWeb_bestway/html/bestway.asp?gclid=CjwKCAiA__HvBRACEiwAbViuUxbUWFYBfvongLgipqDRDME_9nqJqwydML5bW7uxerx2nA84xteXRRoCguwQAvD_BwE">百威旅遊</a></p>
+		  <p><a href="https://www.4p.com.tw/eWeb_spunktour/index.asp?gclid=CjwKCAiA__HvBRACEiwAbViuU6bBnDoJeQua9SlwUIz3UpXlpU0UnYlGNRRd98Mg7E3wjzIVJQbiVxoCrEEQAvD_BwE">世邦旅遊</a></p>
+		  <p><a href="https://www.startravel.com.tw/">燦星旅遊</a></p>
+		</div>
+	  </div>
+	</div>
+  </aside>
+	</div>
+  </article>
+  
+  <footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>

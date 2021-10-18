@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+  <style>
+    #MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+	h2{font-family: 'Ubuntu', sans-serif;}
+	h1{font-family: 'Noto Serif TC', serif;}
+	h3{font-family: 'Noto Sans TC', sans-serif;}
+	a:link     {color:#800000}
+	a:visited  {color:#FF3333}
+	a:hover    {color:#A500CC}
+  </style>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+	    <div class="navbar-header">
+		  <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="page1.html" style="color:#191970">美國</a></li>
+				<li><a href="page2.html" style="color:#191970">法國</a></li>
+				<li  class="active"><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			<li><a href="page9.html" style="color:white">國內景點</a></li>
+			<li><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			  <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+  </nav>
+  <br></br>
+  <br></br>
+  <article>
+    <div id="MyBlog4">
+	  <span id="title"><a href="#back"> Back to top</a></span>
+	</div>
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" id="back">
+		<div class="item active">
+  		  <a href="#Merlion"><img src="image\fish1.jpg" width="100%"></a>
+          <div class="carousel-caption">
+            <h1>魚尾獅公園</h1>
+          </div>          
+        </div>
+		<div class="item">
+          <a href="#Universal"><img src="image\sin.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>新加坡環球影城</h1>
+          </div>
+        </div>
+		<div class="item">
+          <a href="#Gardens"><img src="image\flo1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>濱海灣花園</h1>
+          </div>
+        </div>
+		<div class="item">
+  		  <a href="#Night"><img src="image\ani2.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>夜間野生動物園</h1>
+          </div>          
+        </div>
+      </div>
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+	<br></br>
+	<br></br>
+	
+	<center><h2><b><font color="#00008B">Introduction of attactions</font></b></h2></center>
+	<p style="margin:0cm 7cm">
+	<div class="container">
+	<div class="panel-group" id="accordion">
+      <div class="panel panel-danger">
+        <div class="panel-heading" id="Merlion"><a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><center>魚尾獅公園</center></a></div>
+        <div id="collapse1" class="panel-collapse collapse in">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"><b><font color="#8B0000"><h3>魚尾獅公園（英語：Merlion Park）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是新加坡面積最小的公園，位於富爾頓酒店旁，占地面0.25公頃，有1條露天台，方便遊客</p>
+			  <p>可走上魚尾獅前面拍照。魚尾獅（Merlion）是一種虛構的魚身獅頭的動物。它於1964年由</p>
+			  <p>當時的Van Kleef水族館館長Fraser Brunner先生所設計的。2年後被新旅局採用作為標誌，</p>
+			  <p>一直用到1997年。而這期間，魚尾獅已成為新加坡的代表，如同法國的巴黎鐵塔或美國的</p>
+			  <p>自由女神像。魚尾的靈感來自關於新加坡的一傳說。根據《馬來記年》的記載，公元11世紀時</p>
+			  <p>一位來自三佛齊，名叫聖尼羅烏達瑪的王子在前往麻六甲的途中來到了新加坡。他一登陸就</p>
+			  <p>看到一隻神奇的野獸，隨從告訴他那是一隻獅。他於是為新加坡取名「新加坡拉」（Singapura</p>
+			  <p>，在梵文中意即「獅城」）。而魚尾則是因為新加坡島，她的一切都跟海相關。</p>
+			  </font>
+			</div>
+			<div class="col-md-5">
+			  <img src="image\fish3.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>	  
+	  <div class="panel panel-success">
+        <div class="panel-heading" id="Universal"><a href="#collapse2" data-toggle="collapse" data-parent="#accordion"><center>新加坡環球影城</center></a></div>
+        <div id="collapse2" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>新加坡環球影城（英語：Universal Studios Singapore）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>位於新加坡聖淘沙島砲兵大道8號（名勝世界綜合娛樂城），於2010年3月18日開試營運</p>
+			  <p>，於2011年5月28日正式開幕，為僅次於日本大阪後亞洲第二座環球影城。樂園現時分為</p>
+			  <p>7個主題區，分別為：好萊塢、紐約、科幻城市、古埃及、迷失世界、遙遠王國及馬達加斯加，</p>
+			  <p>是全世界面積最小的環球影城。</p>
+			  <ul>
+			    <li>好萊塢:以20世紀70年代的好萊塢為主題，並設有好萊塢大道、棕櫚樹和著名的好萊塢星光大道。</li>
+			    <li>紐約:以後現代的紐約市為主題，設有紐約市人行道及模仿其令人印象深刻的城市景觀及經典地標。</li>
+			    <p>該地區設有霓虹燈，而兩旁的街道的外牆設置亦充滿大城市的樂趣，部分天為好萊塢電影的製作場景。</p>
+			    <li>科幻城市:科幻城市以未來城市和大都市為主題，園區設置了太空技術和現代化的設施。</li>
+			  </font>
+			  <a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8A%A0%E5%9D%A1%E7%92%B0%E7%90%83%E5%BD%B1%E5%9F%8E#%E4%B8%BB%E9%A1%8C%E5%8D%80"><small>其他主題區請詳見此</small></a>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\sin2.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-info">
+        <div class="panel-heading" id="Gardens"><a href="#collapse3" data-toggle="collapse" data-parent="#accordion"><center>濱海灣花園</center></a></div>
+        <div id="collapse3" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"><b><font color="#8B0000"><h3>濱海灣花園（英文：Gardens by the Bay）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是位於新加坡濱海灣中央的公園，於2012年落成，佔地101公頃，全土興建於填海土地上，</p>
+			  <p>毗連濱海蓄水池。興建濱海灣花園的構思開始於2006年，期望可以促進新加坡由花園城市進化為</p>
+			  <p>「花園中的城市」。</p>
+			  <ul>
+			    <li>中央花園:作為濱海灣南和東花園之間的聯繫，佔地15公頃，並且連接海濱長廊。這條3公里的長廊
+			    <p>是一條從市中心延伸到新加坡東部的觀景散步走道。</p></li>
+			    <li>東花園:內有一系列設計為大型熱帶樹葉形的小型花園，這些小型花園均擁有獨特的景觀設計、特色
+			    <p>和主題。園內亦有設置迎向主導風向的五個水入口，主要目的是為了最大限度地提高和延長的海岸線，</p></li>
+			    <p>同時讓風和水滲透到花園裡以保持園內清涼和舒服。</p>
+			    <li>南花園:於2012年6月29日向公眾開放，為三個花園中面積最龐大的一個，佔地54公頃，主要設計理念
+			    <p>在於打造一個顯示熱帶園藝和園林藝術的頂級平台。</p></li>
+				</font>
+			  </ul>
+		    </div>
+			<div class="col-md-5">
+			  <img src="image\flo3.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-warning">
+        <div class="panel-heading" id="Night"><a href="#collapse4" data-toggle="collapse" data-parent="#accordion"><center>夜間野生動物園</center></a></div>
+        <div id="collapse4" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>夜間野生動物園（英語：Night Safari）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是新加坡標誌性旅遊景點，亦是全球首座專為夜行動物設計的野生動物園。動物園於1994年</p>
+			  <p>開幕，現占地面積35公頃，位於新加坡北區萬禮，坐落在新加坡動物園和實里達蓄水池上段旁</p>
+			  <p>的熱帶雨林中。動物園中有約100種，900隻左右的動物，其中41%為瀕危物種，每年吸引遊客約</p>
+			  <p>130萬人次，是新加坡旅遊標誌性景點之一。夜間野生動物園與裕廊飛禽公園、新加坡動物園及</p>
+			  <p>河川生態園同由新加坡野生動物保育集團管理。</p>
+			  </font>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\ani.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	</div>
+	</div>
+	</p>
+	<br></br>
+	<br></br>
+	<center>
+	  <iframe width="700" height="394" src="https://www.youtube.com/embed/GvNkzcV40WM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+	  <ul class="pagination">
+        <li><a href="page2.html" aria-label="Previous"><span>&laquo;</span></a></li>
+        <li><a href="page1.html">1</a></li>
+        <li><a href="page2.html">2</a></li>
+        <li class="active"><a href="page3.html">3</a></li>
+        <li><a href="page4.html">4</a></li>
+        <li><a href="page5.html">5</a></li>
+        <li><a href="page4.html" aria-label="Next"><span>&raquo;</span></a></li>
+      </ul>
+	</center>
+  </article>
+  <footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>
+

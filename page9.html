@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+   <style>
+   .tab-content{font-family: 'Noto Sans TC', sans-serif;}
+   #MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+    h1{font-family: 'Noto Serif TC', serif;}
+	a:link     {color:#4B0082}
+	a:visited  {color:#227700}
+	a:hover    {color:#800000}
+  </style>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+	    <div class="navbar-header">
+		    <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="page1.html" style="color:#191970">美國</a></li>
+				<li><a href="page2.html" style="color:#191970">法國</a></li>
+				<li><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			<li class="active"><a href="page9.html" style="color:white">國內景點</a></li>
+			<li><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			  <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+  </nav>
+  <br></br>
+  <br></br>
+  <article>
+    <div id="MyBlog4">
+	  <span id="title"><a href="#back"> Back to top</a></span>
+	</div>
+	<div class="container" id="back">
+	  <div style="width:100%; background-image:url(images/bg1.jpg);background-size:cover;background-position:center;position:relative;">
+	    <span id="person" style="position:absolute;color:floralwhite; font-weight:800; font-size:70px; top:64%;left:74%;transform: translate(-64%, -74%); z-index:1000;">國內景點</span>
+	    <img src="image\taiwan.jpg" style="display:block;max-width:100%; margin:0 auto;" >
+	  </div>
+	  <hr>
+	  <div class="container" id="nav-tab">
+	  <ul class="nav nav-tabs" id="navtab">
+        <li class="active"><a href="#tab1" data-toggle="tab"><h4>南投</h4></a></li>
+        <li><a href="#tab2" data-toggle="tab"><h4>花蓮</h4></a></li>
+        <li><a href="#tab3" data-toggle="tab"><h4>台南</h4></a></li>
+      </ul>
+	  
+      <div class="tab-content">    
+        <div class="tab-pane fade in active" id="tab1">
+		  <br></br>
+		  <div class="row">
+		  <div class="col-md-7">
+		  <img src="image\farm1.jfif" width="600" style="float:left">
+		  <br></br>
+		  <hr>
+		  <br></br>
+		  </div>
+		  <div class="col-md-5">
+		  <h4><font color="#006400"><b>清境農場</b></font></h4>
+		  <br></br>
+		  <p style="background:#FFFFBB; padding:1cm">
+		  清境農場成立於民國50年2月20日，座落於中橫公路台14甲線霧社
+		  北端8公里處，空氣清新、林木蒼鬱、繁花遍野、具北歐風光，
+		  有「霧上桃源」之稱。此地海拔1750公尺，每年5~9月份平均氣溫
+		  15度C至23度C左右，遠離城市酷熱，投身期間，居高眺遠，其茂盛
+		  之草原，綠茵如氈，令人留連忘返。</p>
+		  <a href="https://www.cingjing.gov.tw/">learn more >> </a>
+		  </div>
+		  </div>
+		  <hr>
+		  <div class="row">
+		  <div class="col-md-7 col-md-push-5">
+		  <img src="image\one2.jpg" width="600">
+		  </div>
+		  <div class="col-md-5 col-md-pull-7">
+		  <h4><font color="#006400"><b>奧萬大</b></font></h4>
+		  <br></br>
+		  <p style="background:#CCEEFF; padding:1cm">奧萬大國家森林遊樂區，位於台灣南投縣仁愛鄉親愛村。1994年，
+		  正式對外開放。是全台灣最具知名度的賞楓景點之一，有「楓葉
+		  故鄉」之稱號，並設有奧萬大自然教育中心。奧萬大國家森林遊樂
+		  區全區位於萬大溪中游北岸，遊憩區設置於平坦的河階台地上。園
+		  區東臨馬軍山，西臨萬大地區，南接萬大溪，北與馬海僕富士山為
+		  界，總面積廣達2,787公頃，海拔高度1,100~2,600公尺，為明顯的
+		  峽谷地形。萬大溪由萬大北溪及萬大南溪匯流而成，乃濁水溪的源
+		  流之一，另有清水溪、腦寮溪、瑪谷溪諸小溪匯入，水量豐沛。</p>
+		  <a href="https://awdonline.forest.gov.tw/index.php">learn more >> </a>
+		  </div>
+		  </div>
+		</div>
+		
+        <div class="tab-pane fade" id="tab2">
+		  <br></br>
+		  <div class="row">
+		  <div class="col-md-7">
+		  <img src="image\tai1.jpg" width="600" style="float:left">
+		  </div>
+		  <div class="col-md-5">
+		  <h4><font color="#006400"><b>太魯閣國家公園</b></font></h4>
+		  <br></br>
+		  <p style="background:#FFFFBB; padding:1cm">太魯閣國家公園是台灣第四座成立的國家公園，前身為日治時期成立之
+		  次高太魯閣國立公園（1937～1945）。第二次世界大戰後為國家級風景
+		  區，1986年11月12日公告計畫，1986年11月28日成立管理處。位於台灣
+		  東部，地跨花蓮縣、臺中市、南投縣三個行政區。園內有台灣第一條東
+		  西橫貫公路通過，稱為中橫公路系統。太魯閣國家公園的特色為峽谷和
+		  斷崖，崖壁峭立，景緻清幽，「太魯閣幽峽」因而名列台灣八景之一。
+		  另外，園內的高山地帶保留了許多冰河時期的孑遺生物，如山椒魚等。</p>
+		  <a href="https://www.taroko.gov.tw/">learn more >> </a>
+		  </div>
+		  </div>
+		  <hr>
+		  <div class="row">
+		  <div class="col-md-7 col-md-push-5">
+		  <img src="image\star.jpg" width="600" style="float:left">
+		  </div>
+		  <div class="col-md-5 col-md-pull-7">
+		  <h4><font color="#006400"><b>七星潭</b></font></h4>
+		  <br></br>
+		  <p style="background:#CCEEFF; padding:1cm">七星潭，又稱月牙灣，位於臺灣花蓮縣新城鄉大漢村、花蓮市北郊、空
+		  軍花蓮基地東側。七星潭是花蓮縣唯一的縣級風景區，連接太魯閣國家
+		  公園、東海岸和花東縱谷國家風景區。月牙灣（Cikatingan），是原七
+		  星潭居民被日本當局遷居的地方，由於他們自認為七星潭人並懷念七星
+		  潭，就將新遷居之地稱為七星潭。現今七星潭為瀕臨太平洋的弧形海灣
+		  ，由大大小小的礫石所鋪陳。地質上屬陡降型沙灘，瘋狗浪出沒，為全
+		  台十大危險海域之一。此地昔日是小漁村，同時也是花蓮定置漁業發達
+		  興盛之地，原因係當地海域缺乏天然灣澳，然而因黑潮流過台灣東部，
+		  帶來各種迴游的魚類資源，加上中央山脈的山腳緊迫於海濱，沿岸的流
+		  水深且急，近海魚群在此匯集成天然漁場之故。</p>
+		  <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0001124&id=9488">learn more >> </a>
+		  </div>
+		  </div>
+		</div>
+		
+        <div class="tab-pane fade" id="tab3">
+		  <br></br>
+		  <div class="row">
+		  <div class="col-md-7">
+		  <img src="image\seven1.jpg" width="600" style="float:left">
+		  </div>
+		  <div class="col-md-5">
+		  <h4><font color="#006400"><b>七股鹽山</b></font></h4>
+		  <br></br>
+		  <p style="background:#FFFFBB; padding:1cm">七股鹽山位在台南市七股區和將軍區，是臺灣面積最大、最晚發展的
+		  七股鹽場遺蹟之一，總面積有2,700多公頃，全盛時每年產鹽11萬噸，
+		  主要供應國內農工業用鹽，隨時代變遷，曬鹽不符經濟效益，七股鹽場
+		  遂於2002年5月廢曬，結束台灣338年曬鹽歷史，七股鹽山的休閒遊憩
+		  時代隨之開啟，轉形成為著名的鹽業觀光據點，即新南瀛八景之一
+		  「鹽田曬玉」的所在地。由於鹽山如白雪耀眼，像長年堆雪的長白山，
+		  也稱作「南台的長白山」，來臺觀光的日本人則戲稱是「台灣的富士
+		  山」。最主要的鹽山有兩座，為鹽山主峰和鹽山北峰，前者是為七股
+		  鹽場末代的曬鹽堆疊出的人造山，海拔高度為20公尺，約相當於七層
+		  樓高，堆儲之鹽約六萬噸；後者來自西澳洲，為粉碎鹽工廠的原料鹽。</p>
+		  <a href="https://www.twtainan.net/zh-tw/attractions/detail/471">learn more >> </a>
+		  </div>
+		  </div>
+		  <hr>
+		  <div class="row">
+		  <div class="col-md-7 col-md-push-5">
+		  <img src="image\red1.jpg" width="600" style="float:left">
+		  </div>
+		  <div class="col-md-5 col-md-pull-7">
+		  <h4><font color="#006400"><b>赤崁樓</b></font></h4>
+		  <br></br>
+		  <p style="background:#CCEEFF; padding:1cm">赤嵌樓（閩南語：Tshiá-Khàm-Lâu），又作赤崁樓，位於臺灣臺南市
+		  的中西區。前身為1653年荷治時期於赤崁行省興建之歐式城塞，今日
+		  又被稱為「普羅民遮城」（Provintia，意謂省城），在地人稱為「番
+		  仔樓」（閩南語：Huan-á-lâu），曾為全台灣島的商業中心，至清代已
+		  傾圮，僅留部分殘蹟。今日所見的赤嵌樓，大部分是漢人在荷蘭城堡
+		  之上，陸續興建的儒、道教廟祠，包括海神廟、文昌閣。1960年，又由
+		  大南門城內遷來九座贔屭碑，終成今日樣貌。因此，所稱赤嵌樓，是歐
+		  式普羅民遮城殘蹟，以及海神廟、文昌閣的混合體。今列為國定古蹟。</p>
+		  <a href="https://www.taiwan.net.tw/m1.aspx?sno=0001119&id=10889">learn more >> </a>
+		  </div>
+		  </div>
+      </div>
+	  </div>
+	</div>
+  </article>
+  <footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>

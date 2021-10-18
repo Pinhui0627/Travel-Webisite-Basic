@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+  <style>
+    #MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+	h2{font-family: 'Ubuntu', sans-serif;}
+	h1{font-family: 'Noto Serif TC', serif;}
+	h3{font-family: 'Noto Sans TC', sans-serif;}
+	a:link     {color:#800000}
+	a:visited  {color:#FF3333}
+	a:hover    {color:#A500CC}
+  </style>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+	    <div class="navbar-header">
+		  <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="page1.html" style="color:#191970">美國</a></li>
+				<li><a href="page2.html" style="color:#191970">法國</a></li>
+				<li><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li  class="active"><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			<li><a href="page9.html" style="color:white">國內景點</a></li>
+			<li><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			  <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+  </nav>
+  <br></br>
+  <br></br>
+  <article>
+    <div id="MyBlog4">
+	  <span id="title"><a href="#back"> Back to top</a></span>
+	</div>
+	<div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" id="back">
+		<div class="item active">
+  		  <a href="#fu"><img src="image\fu1.jpg" width="100%">
+          <div class="carousel-caption">
+            <h1>富士山</h1>
+          </div>          
+        </div>
+		<div class="item">
+          <a href="#water"><img src="image\qq1.jpeg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>清水寺</h1>
+          </div>
+        </div>
+		<div class="item">
+          <a href="#ban"><img src="image\da1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>大阪城</h1>
+          </div>
+        </div>
+		<div class="item">
+  		  <a href="#tong"><img src="image\tt1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>大通公園</h1>
+          </div>          
+        </div>
+      </div>
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+	<br></br>
+	<br></br>
+	
+	<center><h2><b><font color="#00008B">Introduction of attactions</font></b></h2></center>
+	<p style="margin:0cm 7cm">
+	<div class="container">
+	<div class="panel-group" id="accordion">
+      <div class="panel panel-danger">
+        <div class="panel-heading" id="fu"><a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><center>富士山</center></a></div>
+        <div id="collapse1" class="panel-collapse collapse in">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"><b><font color="#8B0000"><h3>富士山（日語：富士山／ふじさん）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是日本一座橫跨靜岡縣和山梨縣的活火山，位於東京西南方約80公里處，主峰海拔3776公尺</p>
+			  <p>，2002年8月（平成14年），經日本國土地理院重新測量後，為3775.63公尺[2]，是日本國內</p>
+			  <p>的最高峰。[3]富士山頂於冬季積雪，直至次年6、7月才會融化，在管理上屬於本州地區的富士</p>
+			  <p>箱根伊豆國立公園範圍內。富士山不但名列日本百名山，同時也是日本三名山之一，其名稱由</p>
+			  <p>來源自於竹取物語。聞名全球的富士山是日本重要的象徵之一，被視為聖山，其在古代文獻中</p>
+			  <p>亦被稱為不二、不盡或是富慈，也經常被稱作芙蓉峰或富岳。自古以來，這座山的名字就經常</p>
+			  <p>在日本的傳統詩歌「和歌」中出現。</p>
+			  </font>
+			</div>
+			<div class="col-md-5">
+			  <img src="image\fu3.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>	  
+	  <div class="panel panel-success">
+        <div class="panel-heading" id="water"><a href="#collapse2" data-toggle="collapse" data-parent="#accordion"><center>清水寺</center></a></div>
+        <div id="collapse2" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>清水寺（日語：清水寺／きよみずでら）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是京都最古老的寺院，建於西元778年，佔地共達13萬平方公尺，由奈良子島寺僧人賢心</p>
+			  <p>（後來改名延鎮）所創建。但卻因為多年來的戰亂及災害受損，德川家第三代將軍德川家光於</p>
+			  <p>1633年重修清水寺，也就是現存的樣子。清水寺為棟樑結構式寺院。正殿寬19公尺，進深16</p>
+			  <p>公尺，大殿前為懸空的「舞台」，由139根高數十公尺的大圓木支撐。寺院建築氣勢宏偉，</p>
+			  <p>結構巧妙，沒有用一根釘子。寺中六層炬木築成的木台為日本所罕有。</p>
+			  </font>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\qq3.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-info">
+        <div class="panel-heading" id="ban"><a href="#collapse3" data-toggle="collapse" data-parent="#accordion"><center>大阪城</center></a></div>
+        <div id="collapse3" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"><b><font color="#8B0000"><h3>大阪城（日語：大阪城／おおさかじょう）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>位於日本大阪市中央區（古屬攝津國東成郡）的大阪城公園內，為大阪名勝之一，和</p>
+			  <p>名古屋城、熊本城並列日本歷史上的三名城，別名「金城」或「錦城」。在天下統一的</p>
+			  <p>桃山時代是豐臣秀吉的居城、豐臣政權的中心。後來德川家康以兩次大坂之役（冬之陣、</p>
+			  <p>夏之陣）消滅了豐臣家，此後大坂城成為江戶幕府控制西日本大名的重要據點。城郭含</p>
+			  <p>城下町等周長約7.8公里，與江戶城初期（內郭）相當（江戶後期含城下町外郭周長約15.8</p>
+			  <p>ｋｍ）。在豐臣時代，大坂城曾經是全日本規模最大的城郭。</p>
+			  </font>
+		    </div>
+			<div class="col-md-5">
+			  <img src="image\da3.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-warning">
+        <div class="panel-heading" id="tong"><a href="#collapse4" data-toggle="collapse" data-parent="#accordion"><center>大通公園</center></a></div>
+        <div id="collapse4" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>大通公園（日語：大通公園／おおどおりこうえん）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>位於日本北海道札幌市中央區、並將札幌市中心橫向間開的公園。由中央區大通西</p>
+			  <p>一丁目至大通西十二丁目計算，總長度為1.5公里。大通公園是基於札幌市整體城市規劃</p>
+			  <p>而興建的商業街，後來發展成一個地標型的大型公園，具備充足的廣場空間。根據大通</p>
+			  <p>公園在1980年6月6日所發出的告示，大通公園整體面積約為78,901平方米。大通公園位於</p>
+			  <p>札幌市中部，其布局模仿棋盤。附近地區均以大通公園為中心點，按方向及街道序作出稱呼</p>
+			  <p>，例如「北十七條東五丁目」、「南九條西十五丁目」等。區分東西的標準是創成川，而</p>
+			  <p>公園的南北就是真正所謂「大通」。兩邊的行車道分別稱為「北大通」及「南大通」，車輛</p>
+			  <p>都循此二道往東方及西方兩個方向行駛。大通公園作為中央分離帶而言是相當巨大的，總闊度</p>
+			  <p>為65米。大通公園用地大致可以分為商業地域、風景區及都市景觀形成地區。<p>
+			  </font>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\tt2.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	</div>
+	</div>
+	</p>
+	<br></br>
+	<br></br>
+	<center>
+	  <iframe width="700" height="394" src="https://www.youtube.com/embed/AlW8t4jvirQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+	  <ul class="pagination">
+        <li><a href="page3.html" aria-label="Previous"><span>&laquo;</span></a></li>
+        <li><a href="page1.html">1</a></li>
+        <li><a href="page2.html">2</a></li>
+        <li><a href="page3.html">3</a></li>
+        <li class="active"><a href="page4.html">4</a></li>
+        <li><a href="page5.html">5</a></li>
+        <li><a href="page5.html" aria-label="Next"><span>&raquo;</span></a></li>
+      </ul>
+	</center>
+  </article>
+  <footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>

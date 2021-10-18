@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TraVeler</title>
+	<link rel="icon" href="image\T.png" type="image/x-png" />
+	<link rel="shortcut icon" href="image\T.png" type="image/x-png" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  </head>
+  <style>
+    #MyBlog4
+	{
+    position: fixed; 
+    top: 50%; 
+    right: -60px; 
+    background: #87CEFA;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	margin-top: 100px;
+	}
+	#MyBlog4:hover{right:-10px;}
+	#MyBlog4 #title{padding-right: 5px; }
+	h2{font-family: 'Ubuntu', sans-serif;}
+	h1{font-family: 'Noto Serif TC', serif;}
+	h3{font-family: 'Noto Sans TC', sans-serif;}
+	a:link     {color:#800000}
+	a:visited  {color:#FF3333}
+	a:hover    {color:#A500CC}
+  </style>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" style="background:#9AC0CD">
+	    <div class="navbar-header">
+		  <a class="navbar-brand" style="color:white"><b>TraVeler</b></a>
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<span class="sr-only">導覽按鈕</span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			<span class="icon-bar" style="background:white"></span>
+			</button>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+		    <li><a href="index.html">首頁</a></li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">國家<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="page1.html" style="color:#191970">美國</a></li>
+				<li  class="active"><a href="page2.html" style="color:#191970">法國</a></li>
+				<li><a href="page3.html" style="color:#191970">新加坡</a></li>
+				<li><a href="page4.html" style="color:#191970">日本</a></li>
+				<li><a href="page5.html" style="color:#191970">澳洲</a></li>
+			  </ul>
+			<li><a href="page9.html" style="color:white">國內景點</a></li>
+			<li><a href="page6.html" style="color:white">推薦網站</a></li>
+			<li><a href="page7.html" style="color:white">網站架構</a></li>
+		  </ul>
+		  <form class="navbar-form navbar-right">
+		    <div class="form-group">
+			  <input type="email" placeholder="Email" class="font-control">
+			</div>
+			<div class="form-group">
+			  <input type="password" placeholder="Password" class="font-control">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="javascript:alert('登入完成!')">登入</button>
+			<a href="page8.html" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="還沒有會員?立即註冊">註冊</a>
+		  </form>
+        </div> 
+	</div>
+  </nav>
+    <br></br>
+    <br></br>
+  <article>
+    <div id="MyBlog4">
+	  <span id="title"><a href="#back"> Back to top</a></span>
+	</div>
+  <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" id="back">
+		<div class="item active">
+  		  <a href="#La"><img src="image\aa1.jpg" width="100%"></a>
+          <div class="carousel-caption">
+            <h1>艾菲爾鐵塔</h1>
+          </div>          
+        </div>
+		<div class="item">
+          <a href="#Louvre"><img src="image\rr1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>羅浮宮</h1>
+          </div>
+        </div>
+		<div class="item">
+          <a href="#Avenue"><img src="image\xx1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>香榭麗舍大街</h1>
+          </div>
+        </div>
+		<div class="item">
+  		  <a href="#Côte"><img src="image\we1.jpg"  width="100%"></a>
+          <div class="carousel-caption">
+            <h1>蔚藍海岸</h1>
+          </div>          
+        </div>
+      </div>
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+	<br></br>
+	<br></br>
+	
+	<center><h2><b><font color="#00008B">Introduction of attactions</font></b></h2></center>
+	<p style="margin:0cm 7cm">
+	<div class="container">
+	<div class="panel-group" id="accordion">
+      <div class="panel panel-danger">
+        <div class="panel-heading" id="La"><a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><center>艾菲爾鐵塔</center></a></div>
+        <div id="collapse1" class="panel-collapse collapse in">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"><b><font color="#8B0000"><h3>艾菲爾鐵塔（法語：La Tour Eiffel，也常稱為巴黎鐵塔）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>是位於法國巴黎第七區、塞納河畔戰神廣場的鐵製鏤空塔，世界著名建築，也是法國文化</p>
+			  <p>象徵之一，巴黎城市地標之一，巴黎最高建築物。正式地址為Rue Anatole-France 5號。</p>
+			  <p>艾菲爾鐵塔建成於1889年，初名為「三百米塔」，後得名自其設計師居斯塔夫·艾菲爾。鐵塔</p>
+			  <p>是世界建築史上的技術傑作，也是世界上最多人付費參觀的名勝古跡，2011年約有698萬人參觀，</p>
+			  <p>是法國參觀人數第二多的文化景點。1991年，艾菲爾鐵塔連同巴黎塞納河沿岸整座被列入世界遺產。<p>
+			  </font>
+			</div>
+			<div class="col-md-5">
+			  <img src="image\aa2.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>	  
+	  <div class="panel panel-success">
+        <div class="panel-heading" id="Louvre"><a href="#collapse2" data-toggle="collapse" data-parent="#accordion"><center>羅浮宮</center></a></div>
+        <div id="collapse2" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>羅浮宮（法語：Musée du Louvre）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>正式名稱為羅浮博物館，位於法國巴黎市中心的塞納河邊，原是法國的王宮，現在是一所</p>
+			  <p>博物館，常年展出的展品數量達3.5萬件，包括雕塑、繪畫、美術工藝及古代東方、古代埃及</p>
+			  <p>和古希臘羅馬等7個門類，主要收藏1860年以前的藝術作品與考古文物。</p>
+			  </font>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\rr2.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-info">
+        <div class="panel-heading" id="Avenue"><a href="#collapse3" data-toggle="collapse" data-parent="#accordion"><center>香榭麗舍大街</center></a></div>
+        <div id="collapse3" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7">
+			  <p class="lead"><b><font color="#8B0000"><h3>香榭麗舍大街（法語：Avenue des Champs-Élysées）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>或稱les Champs-Élysées；或譯香榭麗舍大道，是法國首都巴黎的一條大道，位於城市西北部</p>
+			  <p>的第八區。它被譽為巴黎最美麗的街道。「香榭麗舍」原意是希臘神話中聖人及英雄靈魂居住</p>
+			  <p>的冥界中之至福樂土。香榭麗舍大道位於巴黎八區，城市的西北部。起始於協和廣場，廣場上</p>
+			  <p>矗立有方尖碑，大街由東向西延伸1915米，前半段較平坦，接著有一段上坡直到戴高樂廣場</p>
+			  <p>（舊稱星形廣場，位於夏佑宮所在的高地頂部），廣場中心屹立著凱旋門。</p>
+			  </font>
+		    </div>
+			<div class="col-md-5">
+			  <img src="image\xx3.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	  <div class="panel panel-warning">
+        <div class="panel-heading" id="Côte"><a href="#collapse4" data-toggle="collapse" data-parent="#accordion"><center>蔚藍海岸</center></a></div>
+        <div id="collapse4" class="panel-collapse collapse">
+		  <div class="row">
+		    <div class="col-md-7 col-md-push-5">
+			  <p class="lead"><b><font color="#8B0000"><h3>蔚藍海岸（法語：Côte d'Azur）</h3></font></b></p>
+			  <font color="#8B1C62">
+			  <p>又稱作法國里維耶拉（French Riviera），地處地中海沿岸，屬於法國東南沿海普羅旺斯-</p>
+			  <p>阿爾卑斯-蔚藍海岸大區一部分，為自瓦爾省土倫與義大利接壤的阿爾卑斯省芒通之間相連</p>
+			  <p>的大片濱海地區。蔚藍海岸被認為是最奢華和最富有的地區之一，世界上眾多富人、名人多</p>
+			  <p>匯集於此。位於阿爾卑斯省的濱海小城坎城為坎城電影節主辦地，每年一度的金棕櫚獎就在</p>
+			  <p>此地頒發。尼斯是此地區的最大城市，同時也是著名的度假聖地。三面被法國環繞的親王國</p>
+			  <p>摩納哥也位於此處。</p>
+			  </font>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+			  <img src="image\we3.jpg" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+      </div>
+	</div>
+	</div>
+	</p>
+	<br></br>
+	<br></br>
+	<center>
+	  <iframe width="700" height="394" src="https://www.youtube.com/embed/0x6a5tN0JYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+	  <ul class="pagination">
+        <li><a href="page1.html" aria-label="Previous"><span>&laquo;</span></a></li>
+        <li><a href="page1.html">1</a></li>
+        <li class="active"><a href="page2.html">2</a></li>
+        <li><a href="page3.html">3</a></li>
+        <li><a href="page4.html">4</a></li>
+        <li><a href="page5.html">5</a></li>
+        <li><a href="page3.html" aria-label="Next"><span>&raquo;</span></a></li>
+      </ul>
+	</center>
+  </article>
+  <footer>
+    <hr>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <hr>
+    <div style="background:#CCDDFF; padding:0.5cm" >
+      &copy; <b>TraVeler™2019</b> International Travel Agency &middot; Privacy Policy&middot;  Terms & Conditions
+	  <p class="text-right">
+	    <a href="https://www.instagram.com/pinhui0627/?hl=zh-tw"><i class="fab fa-instagram fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.facebook.com/profile.php?id=100026497248153&ref=bookmarks"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>&nbsp; 
+		<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x" style="color:white"></i></a>
+	  </p>
+    </div>
+  </footer>
+  </body>
+</html>
